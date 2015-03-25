@@ -15,6 +15,13 @@
 		002FBA4F1AB0CFD900C68EA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 002FBA4E1AB0CFD900C68EA8 /* Images.xcassets */; };
 		002FBA521AB0CFD900C68EA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 002FBA501AB0CFD900C68EA8 /* LaunchScreen.xib */; };
 		002FBA5E1AB0CFD900C68EA8 /* PlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBA5D1AB0CFD900C68EA8 /* PlacesTests.m */; };
+		002FBA6E1AB0CFD900C68EA8 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBA6D1AB0CFD900C68EA8 /* Place.m */; };
+		002FBAAA1AB0DE1F00C68EA8 /* MasterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBAA91AB0DE1F00C68EA8 /* MasterTableViewCell.m */; };
+		002FBAB21AB0DF7C00C68EA8 /* PlacesCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBAB11AB0DF7C00C68EA8 /* PlacesCommunicator.m */; };
+		002FBAB61AB0E18800C68EA8 /* PlacesBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBAB51AB0E18800C68EA8 /* PlacesBuilder.m */; };
+		002FBABA1AB0E35A00C68EA8 /* PlacesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 002FBAB91AB0E35A00C68EA8 /* PlacesManager.m */; };
+		00B431501AB9032400D4BAFD /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B4314F1AB9032400D4BAFD /* LogInViewController.m */; };
+		35EFB9CD78023A434D62290E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9A6652451DAAFC50773FA4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,23 @@
 		002FBA571AB0CFD900C68EA8 /* PlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		002FBA5C1AB0CFD900C68EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		002FBA5D1AB0CFD900C68EA8 /* PlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlacesTests.m; sourceTree = "<group>"; };
+		002FBA6C1AB0CFD900C68EA8 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		002FBA6D1AB0CFD900C68EA8 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		002FBAA81AB0DE1F00C68EA8 /* MasterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTableViewCell.h; sourceTree = "<group>"; };
+		002FBAA91AB0DE1F00C68EA8 /* MasterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTableViewCell.m; sourceTree = "<group>"; };
+		002FBAB01AB0DF7C00C68EA8 /* PlacesCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesCommunicator.h; sourceTree = "<group>"; };
+		002FBAB11AB0DF7C00C68EA8 /* PlacesCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesCommunicator.m; sourceTree = "<group>"; };
+		002FBAB31AB0E06000C68EA8 /* PlacesCommunicatorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacesCommunicatorDelegate.h; sourceTree = "<group>"; };
+		002FBAB41AB0E18800C68EA8 /* PlacesBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesBuilder.h; sourceTree = "<group>"; };
+		002FBAB51AB0E18800C68EA8 /* PlacesBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesBuilder.m; sourceTree = "<group>"; };
+		002FBAB71AB0E34200C68EA8 /* PlacesManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacesManagerDelegate.h; sourceTree = "<group>"; };
+		002FBAB81AB0E35A00C68EA8 /* PlacesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesManager.h; sourceTree = "<group>"; };
+		002FBAB91AB0E35A00C68EA8 /* PlacesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesManager.m; sourceTree = "<group>"; };
+		00B4314E1AB9032400D4BAFD /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		00B4314F1AB9032400D4BAFD /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		140FEFD463CA7BB368B05876 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		91A5F2C593EE0842BBEC6904 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AC9A6652451DAAFC50773FA4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35EFB9CD78023A434D62290E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +94,8 @@
 				002FBA3D1AB0CFD900C68EA8 /* Places */,
 				002FBA5A1AB0CFD900C68EA8 /* PlacesTests */,
 				002FBA3C1AB0CFD900C68EA8 /* Products */,
+				D0B3A2AD89C46C78B41A5ADD /* Pods */,
+				ACFF4F84B46DFEF604CFB6FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,13 +113,13 @@
 			children = (
 				002FBA421AB0CFD900C68EA8 /* AppDelegate.h */,
 				002FBA431AB0CFD900C68EA8 /* AppDelegate.m */,
-				002FBA451AB0CFD900C68EA8 /* MasterViewController.h */,
-				002FBA461AB0CFD900C68EA8 /* MasterViewController.m */,
-				002FBA481AB0CFD900C68EA8 /* DetailViewController.h */,
-				002FBA491AB0CFD900C68EA8 /* DetailViewController.m */,
 				002FBA4B1AB0CFD900C68EA8 /* Main.storyboard */,
-				002FBA4E1AB0CFD900C68EA8 /* Images.xcassets */,
+				002FBAA51AB0DD3700C68EA8 /* Controllers */,
+				002FBAA41AB0DD0400C68EA8 /* Models */,
+				002FBAAE1AB0DF2700C68EA8 /* Network */,
+				002FBAAF1AB0DF4000C68EA8 /* Parsers */,
 				002FBA501AB0CFD900C68EA8 /* LaunchScreen.xib */,
+				002FBA4E1AB0CFD900C68EA8 /* Images.xcassets */,
 				002FBA3E1AB0CFD900C68EA8 /* Supporting Files */,
 			);
 			path = Places;
@@ -124,6 +151,85 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		002FBAA41AB0DD0400C68EA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				002FBA6C1AB0CFD900C68EA8 /* Place.h */,
+				002FBA6D1AB0CFD900C68EA8 /* Place.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		002FBAA51AB0DD3700C68EA8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				002FBAA61AB0DD4500C68EA8 /* View */,
+				002FBAA71AB0DD4F00C68EA8 /* Data */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		002FBAA61AB0DD4500C68EA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00B4314E1AB9032400D4BAFD /* LogInViewController.h */,
+				00B4314F1AB9032400D4BAFD /* LogInViewController.m */,
+				002FBA451AB0CFD900C68EA8 /* MasterViewController.h */,
+				002FBA461AB0CFD900C68EA8 /* MasterViewController.m */,
+				002FBAA81AB0DE1F00C68EA8 /* MasterTableViewCell.h */,
+				002FBAA91AB0DE1F00C68EA8 /* MasterTableViewCell.m */,
+				002FBA481AB0CFD900C68EA8 /* DetailViewController.h */,
+				002FBA491AB0CFD900C68EA8 /* DetailViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		002FBAA71AB0DD4F00C68EA8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				002FBAB71AB0E34200C68EA8 /* PlacesManagerDelegate.h */,
+				002FBAB81AB0E35A00C68EA8 /* PlacesManager.h */,
+				002FBAB91AB0E35A00C68EA8 /* PlacesManager.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		002FBAAE1AB0DF2700C68EA8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				002FBAB01AB0DF7C00C68EA8 /* PlacesCommunicator.h */,
+				002FBAB11AB0DF7C00C68EA8 /* PlacesCommunicator.m */,
+				002FBAB31AB0E06000C68EA8 /* PlacesCommunicatorDelegate.h */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		002FBAAF1AB0DF4000C68EA8 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				002FBAB41AB0E18800C68EA8 /* PlacesBuilder.h */,
+				002FBAB51AB0E18800C68EA8 /* PlacesBuilder.m */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
+		ACFF4F84B46DFEF604CFB6FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC9A6652451DAAFC50773FA4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0B3A2AD89C46C78B41A5ADD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91A5F2C593EE0842BBEC6904 /* Pods.debug.xcconfig */,
+				140FEFD463CA7BB368B05876 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 002FBA611AB0CFD900C68EA8 /* Build configuration list for PBXNativeTarget "Places" */;
 			buildPhases = (
+				28B13FD1585E9F6CB9CCCB21 /* Check Pods Manifest.lock */,
 				002FBA371AB0CFD900C68EA8 /* Sources */,
 				002FBA381AB0CFD900C68EA8 /* Frameworks */,
 				002FBA391AB0CFD900C68EA8 /* Resources */,
+				E8E39AC33455DF97DD00A93F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,13 +327,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28B13FD1585E9F6CB9CCCB21 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8E39AC33455DF97DD00A93F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		002FBA371AB0CFD900C68EA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002FBAB21AB0DF7C00C68EA8 /* PlacesCommunicator.m in Sources */,
+				002FBAB61AB0E18800C68EA8 /* PlacesBuilder.m in Sources */,
+				00B431501AB9032400D4BAFD /* LogInViewController.m in Sources */,
 				002FBA441AB0CFD900C68EA8 /* AppDelegate.m in Sources */,
+				002FBABA1AB0E35A00C68EA8 /* PlacesManager.m in Sources */,
 				002FBA471AB0CFD900C68EA8 /* MasterViewController.m in Sources */,
+				002FBAAA1AB0DE1F00C68EA8 /* MasterTableViewCell.m in Sources */,
+				002FBA6E1AB0CFD900C68EA8 /* Place.m in Sources */,
 				002FBA411AB0CFD900C68EA8 /* main.m in Sources */,
 				002FBA4A1AB0CFD900C68EA8 /* DetailViewController.m in Sources */,
 			);
@@ -347,6 +494,7 @@
 		};
 		002FBA621AB0CFD900C68EA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A5F2C593EE0842BBEC6904 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Places/Info.plist;
@@ -357,6 +505,7 @@
 		};
 		002FBA631AB0CFD900C68EA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140FEFD463CA7BB368B05876 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Places/Info.plist;
@@ -418,6 +567,7 @@
 				002FBA631AB0CFD900C68EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		002FBA641AB0CFD900C68EA8 /* Build configuration list for PBXNativeTarget "PlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +576,7 @@
 				002FBA661AB0CFD900C68EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

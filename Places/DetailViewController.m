@@ -28,7 +28,21 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.detailSummary.text = [self.detailItem placeSummary];
+        
+        NSURL *url = [NSURL URLWithString:[self.detailItem urlPhoto]];
+        NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+        AFHTTPRequestOperation *requestOperation = [[AFHTTPRequestOperation alloc] initWithRequest:urlRequest];
+        requestOperation.responseSerializer = [AFImageResponseSerializer serializer];
+        [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+            
+            self.detailPhoto = responseObject;
+            
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Image error: %@", error);
+        }];
+    
+
     }
 }
 

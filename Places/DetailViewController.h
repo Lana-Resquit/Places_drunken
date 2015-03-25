@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Place.h"
+#import "AFNetworking.h"
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) Place *detailItem;
+@property (weak, nonatomic) IBOutlet UIImageView *detailPhoto;
+@property (weak, nonatomic) IBOutlet UILabel *detailSummary;
+@property (strong, nonatomic) AFHTTPRequestOperation *loadingPhotosOperation;
+
 
 @end
 

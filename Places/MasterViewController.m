@@ -47,6 +47,18 @@
     NSLog(@"Error %@; %@", error, [error localizedDescription]);
 }
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSArray *visibleCells = [self.tableView visibleCells];
+    for (MasterTableViewCell *cell in visibleCells) {
+        [cell cellOnTableView:self.tableView didScrollOnView:self.view];
+    }
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    
+    [self scrollViewDidScroll:nil];
+}
+
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -68,9 +80,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-   
+    
     MasterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    Place *place = _places[indexPath.row];
+   Place *place = _places[indexPath.row];
     cell.summary.text = place.placeSummary;
     cell.title.text = place.placeTitle;
     
@@ -90,9 +102,5 @@
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return NO;
-}
 
 @end

@@ -14,6 +14,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *summary;
 @property (weak, nonatomic) IBOutlet UIImageView *photo;
 @property (weak, nonatomic) IBOutlet UILabel *title;
+
 @property (strong, nonatomic) AFHTTPRequestOperation *loadingPlacesOperation;
+
+-(void)cellOnTableView:(UITableView *)tableView didScrollOnView:(UIView *)view;
 
 @end

@@ -16,7 +16,7 @@
 #import "AFNetworking.h"
 #import "VKSdk.h"
 
-@interface MasterViewController () <PlacesManagerDelegate> {
+@interface MasterViewController () <PlacesManagerDelegate,UIScrollViewDelegate> {
     NSArray *_places;
     PlacesManager *_manager;
 }
@@ -81,7 +81,6 @@
     [requestOperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         cell.photo.image = responseObject;
-        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Image error: %@", error);
     }];
